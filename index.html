@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title> My first website. </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>   
+</head>
+
+<body style="background-color: #cca0cc;">
+
+    <img id="donut1" src="img/donut_01.png" width="300" height="300" />
+    <img id="donut2" src="img/donut_02.png" width="300" height="300" />
+    <img id="donut3" src="img/donut_03.png" width="300" height="300" />
+
+    <script>
+        var sound1 = new buzz.sound("sound/teacup1.mp3");
+        var sound2 = new buzz.sound("sound/glitch2.mp3");
+        var sound3 = new buzz.sound("sound/glitch3.mp3");
+
+        window.onload = function() {
+                document.getElementById('donut1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('donut2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('donut3').addEventListener('click', function () {sound3.play(); });
+        }
+
+
+
+        </script>
+</body>
+
+</html>
